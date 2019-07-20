@@ -609,6 +609,9 @@ decode QUADRANT default Unknown::unknown() {
                     0x1: mul({{
                         Rd = Rs1_sd*Rs2_sd;
                     }}, IntMultOp);
+                    0x10: mod({{
+                        Rd = Rs1_sd % Rs2_sd;
+                    }});
                     0x20: sub({{
                         Rd = Rs1_sd - Rs2_sd;
                     }});
